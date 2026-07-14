@@ -1,8 +1,11 @@
-const express = require("express")
-const app = express()
-const port = 3000
+const express = require("express");
+const connectDB = require("./db");
+const app = express();
+const port = 3000;
 app.set("view engine", "ejs")
 app.use(express.static('public'))
+
+connectDB();
 
 app.get('/', (req, res) => {
     res.render('home', { title: 'Welcome to Express', content: 'krish' })

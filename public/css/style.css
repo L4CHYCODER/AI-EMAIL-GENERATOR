@@ -4,43 +4,41 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
-
-
-
-header {
-    background: #333;
+nav {
+    background-color: #333;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
+.nav-brand {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
     font-size: 1.5rem;
 }
 
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #f4f4f4;
-    margin-top: 20px;
+.nav-links {
+    display: flex;
+    list-style: none;
 }
 
-
-.home-content {
-    text-align: center;
-    margin-top: 40px;
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.home-content h2 {
-    color: #555;
+.nav-links a:hover {
+    background-color: #61d651;
 }
 
 main {
