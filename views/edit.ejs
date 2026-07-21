@@ -1,0 +1,18 @@
+<%-include('partials/header')%>
+    <%-include('partials/navbar')%>
+        <main>
+            <h1>Edit Email</h1>
+            <form action="/emails/<%=email._id%>/edit" method="POST">
+                <label for="to">To</label>
+                <input type="text" id="to" name="to" value="<%=email.to%>" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" value="<%=email.subject%>" requried>
+
+                <label for="body">Body</label>
+                <textarea id="body" name="body" requried><%=email.body%></textarea>
+
+                <button type="submit">Update Email</button>
+            </form>
+        </main>
+        <%-include('partials/footer')%>

@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+    <%- include('partials/navbar') %>
+
+        <main>
+            <h1>Inbox</h1>
+            <p>Showing <%= emails.length %> emails</p>
+            <a href="/emails/compose" class="btn">+ Compose Email</a>
+
+            <% emails.forEach(email=> { %>
+                <div class="email-card">
+                    <h2>
+                        <a href="/emails/<%= email._id %>">
+                            <%= email.subject %>
+                        </a>
+                    </h2>
+                    <p class="email-meta">
+                        To: <%= email.to %> | Status: <%= email.status %>
+                    </p>
+                </div>
+                <% }) %>
+        </main>
+
+        <%- include('partials/footer') %>

@@ -1,9 +1,8 @@
 <nav>
     <div class="nav-brand">Email Assistant</div>
     <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="#">Email</a></li>
-        <li><a href="#">Compose</a></li>
-        <li><a href="#">History</a></li>
+        <li><a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>">Home</a></li>
+        <li><a href="/emails" class="<%= currentPage === 'emails' ? 'active' : '' %>">Inbox</a></li>
+        <li><a href="/emails/compose" class="<%= currentPage === 'compose' ? 'active' : '' %>">Compose</a></li>
     </ul>
 </nav>

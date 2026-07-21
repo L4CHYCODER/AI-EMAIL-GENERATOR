@@ -41,6 +41,36 @@ nav {
     background-color: #61d651;
 }
 
+.email-card {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.email-card h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.email-card h2 a:hover {
+    color: #2196F3;
+}
+
+.email-meta {
+    color: #888;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.status-draft {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.status-sent {
+    color: #4caf50;
+    font-weight: bold;
+}
+
 main {
     padding: 20px;
     max-width: 800px;

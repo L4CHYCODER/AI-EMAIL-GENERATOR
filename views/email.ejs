@@ -1,0 +1,19 @@
+<%-include('partials/header')%>
+    <%-include('partials/navbar')%>
+        <main>
+            <h1>
+                <%=email.subject%>
+            </h1>
+            <p>
+                From: <%=email.to%>
+            </p>
+            <p>
+                <%=email.body%>
+            </p>
+            <a href="/emails" class="btn">Back to Inbox</a>
+            <a href="/emails/<%=email._id%>/edit" class="btn">Edit</a>
+            <form action="/emails/<%= email._id %>/delete" method="POST" style="display: inline;">
+                <button type="submit" class="btn-delete">Delete</button>
+            </form>
+        </main>
+        <%-include('partials/footer')%>
